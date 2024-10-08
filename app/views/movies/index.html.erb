@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="container">
+  
+  <%= link_to "New movie", new_movie_path, class: "btn btn-success btn-sm text-white" %>
+
+  <div id="movies">
+    <div class="row">
+      <% @movies.each do |movie| %>
+        <%= render movie %>
+      <% end %>
+    </div>
+  </div>
+</div>

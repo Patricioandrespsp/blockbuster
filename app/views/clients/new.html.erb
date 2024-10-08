@@ -1,0 +1,9 @@
+<div class="card text-bg-primary mb-3 d-flex justify-content-center align-items-center" style="width: 12rem; height: auto;">
+  <h4 class="text-center">Nuevo cliente</h4>
+  <%= render "form", client: @client %>
+  <br>
+  <br>
+  <div class="text-center">
+  <%= link_to "Volver a clientes", clients_path, class: "btn btn-success btn-sm" %>
+  </div>
+</div>

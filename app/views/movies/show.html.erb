@@ -1,0 +1,11 @@
+<div class="card w-100">
+  <div class="card-body">
+    <p style="color: green"><%= notice %></p>
+    <%= render @movie %>
+    <div class="mt-3 d-flex">
+      <%= link_to "Edit this movie", edit_movie_path(@movie), class: "btn btn-primary btn-sm text-white" %>
+      <%= link_to "Back to movies", movies_path, class: "btn btn-success btn-sm text-white" %>
+      <%= button_to "Destroy this movie", @movie, method: :delete, class: "btn btn-danger btn-sm text-white" %>
+    </div>
+  </div>
+</div>
